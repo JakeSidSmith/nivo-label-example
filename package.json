@@ -1,0 +1,42 @@
+{
+  "name": "nivo-label-example",
+  "version": "0.0.0",
+  "description": "Example fix for Nivo chart labels in Firefox",
+  "main": "src/index.js",
+  "scripts": {
+    "dist": "browserify src/index.tsx -t browserify-css -p [tsify -p tsconfig.dist.json] -o dist/index.js",
+    "start": "budo src/index.tsx:dist/index.js --live -- -t browserify-css -p [tsify -p tsconfig.dist.json]",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakesidsmith/nivo-label-example.git"
+  },
+  "keywords": [
+    "nivo",
+    "charts",
+    "label",
+    "fix",
+    "firefox"
+  ],
+  "author": "Jake 'Sid' Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jakesidsmith/nivo-label-example/issues"
+  },
+  "homepage": "https://github.com/jakesidsmith/nivo-label-example#readme",
+  "dependencies": {
+    "@nivo/bar": "^0.55.0",
+    "@types/react": "^16.8.10",
+    "@types/react-dom": "^16.8.3",
+    "browserify": "^16.2.3",
+    "browserify-css": "^0.14.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "tsify": "^4.0.1",
+    "typescript": "^3.3.4000"
+  },
+  "devDependencies": {
+    "budo": "^11.6.1"
+  }
+}
