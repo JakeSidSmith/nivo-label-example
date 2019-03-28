@@ -11,3 +11,15 @@ body {
   color: #333;
   background-color: #FFF;
 }
+
+text[alignment-baseline="before-edge"] {
+  dominant-baseline: text-before-edge;
+}
+
+text[alignment-baseline="central"] {
+  dominant-baseline: central;
+}
+
+.chart {
+  height: 500px;
+}
